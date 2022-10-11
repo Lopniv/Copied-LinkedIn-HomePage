@@ -1,0 +1,115 @@
+.DivInputPosting
+{
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.DivInputPosting .ImgProfile
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.DivInputPosting span
+{
+    margin-right: 30px;
+    font-size: 0.9em;
+    border-radius: 30px;
+    border: 1px solid #b2b2b2;
+    color: #666666;
+    padding-left: 20px;
+    flex-grow: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.DivInputPosting span:hover
+{
+    background: #f3f2ef;
+}
+
+.DivContainerItem
+{
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.DivItemCategory:hover
+{
+    background: #f3f2ef;
+    border-radius: 10px;
+}
+
+.DivItemCategory
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DivItemCategory img
+{
+    width: 20px;
+    height: 20px;
+}
+
+.DivItemCategory span
+{
+    font-size: 0.9em;
+    color: #666666;
+    margin-left: 10px;
+}
+
+
+
+
+/* Input Type with Icon */
+
+input[type=button].ButtonMultimedia 
+{
+  width: auto;
+  height: auto;
+  padding: 10px;
+  padding-left: 34px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: transparent; 
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 5px; 
+}
+
+input[type=button].ButtonMultimedia:hover
+{
+  background-color: lightgrey; 
+}
+
+.ButtonActivity
+{
+  background-image: url("https://cdn-icons-png.flaticon.com/512/2886/2886665.png");
+}
+
+.ButtonPhoto
+{
+  background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-image-512.png");
+}
+
+.ButtonVideo
+{
+  background-image: url("https://cdn-icons-png.flaticon.com/512/860/860780.png");
+}
+
+.ButtonArticle
+{
+  background-image: url("https://cdn-icons-png.flaticon.com/512/5445/5445000.png");
+}
+
+
+
+

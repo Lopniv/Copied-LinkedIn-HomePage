@@ -1,0 +1,990 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f2ef;
+}
+
+nav
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    background: white;
+    transition: 0.3s;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+ul 
+{
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+li
+{
+    width: 185px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+li a 
+{
+    color: black;
+    font-size: 0.7em;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.ImgLogo
+{
+    width: 35px;
+    height: 35px;
+    background-image: url('asset/logo-linkedin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+}
+
+.Icon
+{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+}
+
+#Me
+{
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ImgSearch
+{
+    background-image: url('asset/icon-search.png');
+}
+
+.ImgHome
+{
+    background-image: url('asset/icon-home.png');
+}
+
+.ImgConnection
+{
+    background-image: url('asset/icon-connection.png');
+}
+
+.ImgJob
+{
+    background-image: url('asset/icon-job.png');
+}
+
+.ImgMessage
+{
+    background-image: url('asset/icon-message.png');
+}
+
+.ImgBell
+{
+    background-image: url('asset/icon-bell.png');
+}
+
+.ImgMe
+{
+    background-image: url('asset/icon-message.png');
+}
+
+.ImgJobs
+{
+    background-image: url('asset/icon-jobs.png');
+}
+
+.ListInMobile
+{
+    width: 0px;
+    height: 0px;
+}
+
+.ListInMobile a
+{
+    font-size: 0em;
+}
+
+.FormSearchContainer 
+{
+    display: flex;
+    width: 100%;
+}
+
+.FormSearchContainer i 
+{
+    position: absolute;
+}
+  
+.SearchIcon 
+{
+    padding-top: 10px;
+    margin-left: 15px;
+    color: #67696b;
+    text-align: center;
+}
+  
+.InputField
+{
+    padding: 10px;
+    padding-left: 40px;
+    text-align: left;
+    background: #eef3f8;
+    border: none;
+    border-radius: 5px;
+}
+
+hr
+{
+    border-bottom: 0px;
+    border-top: 1.5px solid #ebebeb;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+main 
+{
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input:focus, textarea:focus, select:focus
+{
+    outline: none;
+}
+
+/* ELEMENT ASIDE LEFT - START */
+
+.AsideLeft
+{
+    width: 20%;
+}
+
+.AsideRight
+{
+    width: 28%;
+}
+
+.AsideCenter 
+{
+    padding: 0;
+    width: 48%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+
+.AsideCard
+{
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: white;
+    transition: 0.3s;
+}
+
+.Card
+{
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.CardPost
+{
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.CardPosting
+{
+    height: fit-content;
+    margin-top: 0px;
+}
+
+.DivProfile
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.DivBackground
+{
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #bfd3d6;
+}
+
+.ImgProfile
+{
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    border: 2px white;
+    border-style: solid;
+    background: #eee no-repeat center;
+    background-size: cover;
+    background-image: url('asset/profile.jpg');
+}
+
+.DivProfile span
+{
+    font-weight: bold;
+}
+
+.DivProfile p
+{
+    font-size: 0.8em;
+    text-align: center;
+    color: #a8a8a8;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.DivConnectionProfile
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.DivConnectionProfile span
+{
+    width: 80%;
+    font-size: 0.7em;
+}
+
+.DivConnectionProfile label
+{
+    width: 20%;
+    font-size: 0.7em;
+    text-align: end;
+}
+
+.DivPremium
+{
+    padding: 15px;
+    font-size: 0.7em;
+}
+
+.DivContainerTagGroup
+{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.DivTagTitle
+{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+#TagLatest
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.DivTagTitle .ImgAdd
+{
+    opacity: 1;
+}
+
+.DivTagTitle img:hover
+{
+    opacity: 1;
+    background: #f3f2ef;
+    border-radius: 20px;
+}
+
+.DivTagTitle img
+{
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+}
+
+.DivContainerTagGroup .SpanTitle
+{
+    font-size: 0.8em;
+}
+
+#Ref
+{
+    color: #0a66c2;
+}
+
+.DivTagGroup
+{
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.DivTagGroup:hover
+{
+    background: #f3f2ef;
+}
+
+.DivTagGroup span:hover
+{
+    color: black;
+}
+
+.DivTagGroup img
+{
+    width: 15px;
+    height: 15px;
+}
+
+.DivTagGroup span
+{
+    font-size: 0.65em;
+    color: #666666;
+    padding-left: 5px;
+}
+
+#IdTagGroup
+{
+    align-items: center;
+    font-size: 0.8em;
+}
+
+/* ELEMENT ASIDE LEFT - END */
+
+
+/* ELEMENT ASIDE RIGHT - START */
+
+.AsideRight .Card
+{
+    padding-bottom: 10px;
+}
+
+.DivAddToFeed
+{
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.FigureFeed
+{
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.ImageFeed
+{
+    width: 15%;
+    height: 19%;
+    margin-right: 15px;
+    border-radius: 100%;
+    border: 0px white;
+    border-style: solid;
+    background: #eee no-repeat center;
+    background-size: cover;
+}
+
+.DivProfileFeed
+{
+    flex-grow: 1;
+}
+
+.SpanNameFeed
+{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.SpanNameCategory
+{
+    font-size: 0.7em;
+    margin-top: 5px;
+    color: #969696;
+}
+
+.DivButtonFollow
+{
+    padding: 5px 10px 5px 10px;
+    margin-top: 5px;
+    border: 1px solid #666666;
+    border-radius: 30px;
+    width: fit-content;
+}
+
+.DivProfileFeed .DivButtonFollow:hover
+{
+    border: 2px solid #666666;
+    background: #f3f2ef;
+}
+
+.DivProfileFeed .DivButtonFollow i
+{
+    margin-right: 10px;
+}
+
+.DivButtonSeeRecommend:hover
+{
+    border: 0px #d8d8d8;
+    border-radius: 10px;
+    background: #f3f2ef;
+}
+
+.DivButtonSeeRecommend
+{
+    margin-left: 20px;
+    padding: 10px;
+    width: fit-content;
+    font-size: 0.8em;
+}
+
+.DivButtonSeeRecommend i
+{
+    margin-left: 10px;
+}
+
+.DivContainerAds
+{
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.DivContainerAds span
+{
+    font-size: 0.8em;
+    color: #666666;
+}
+
+.DivContainerAds img
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.DivGetFeedsAndJob
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.DivGetFeedsAndJob span
+{
+    color: #666666;
+}
+
+.DivGetFeedsAndJob#Top
+{
+    font-size: 0.7em;
+}
+
+.DivImageAdsJob 
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.DivImageAdsJob img
+{
+    width: 60px;
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.DivGetFeedsAndJob#Bottom
+{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.AsideCard .DivContainerButtonFollow
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.AsideCard .DivContainerButtonFollow .DivButtonFollow
+{
+    border: 1px solid #2678c9;
+}
+
+.AsideCard .DivContainerButtonFollow .DivButtonFollow a
+{
+    color: #2678c9;
+}
+
+.AsideSetting div
+{
+    font-size: 0.7em;
+    color: #666666;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.AsideSetting img
+{
+    width: 250px;
+}
+
+/* ELEMENT ASIDE RIGHT - END */
+
+
+/* ELEMENT ASIDE CENTER - START */
+
+    /* ELEMENT POSTING - START */
+
+.FormInput
+{
+    padding: 10px;
+    
+}
+
+.FieldsetInputPosting
+{
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 0px;
+}
+
+.FieldsetInputPosting .ImgProfile
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.FieldsetInputPosting input
+{
+    margin-right: 10px;
+    flex-grow: 1;
+    font-size: 0.9em;
+    border-radius: 30px;
+    border: 1px solid #b2b2b2;
+    color: #666666;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.FieldsetInputPosting input:hover
+{
+    background: #f3f2ef;
+}
+
+.FieldsetInputPosting
+{
+    display: flex;
+}
+
+.FieldsetCategoryItem
+{
+    display: flex;
+    width: 100%;
+    border: 0px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+input[type=button].ButtonMultimedia 
+{
+  width: auto;
+  height: auto;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: transparent; 
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 10px; 
+}
+
+input[type=button].ButtonMultimedia:hover
+{
+  background-color: #f3f2ef; 
+}
+
+.ButtonActivity
+{
+  background-image: url("asset/icon-calendar.png");
+}
+
+.ButtonPhoto
+{
+  background-image: url("asset/icon-images.png");
+}
+
+.ButtonVideo
+{
+  background-image: url("asset/icon-video.png");
+}
+
+.ButtonArticle
+{
+  background-image: url("asset/icon-article.png");
+}
+
+.DivContainerSort
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.DivContainerSort hr
+{
+    border-bottom: 0px;
+    border-top: 1.5px solid #cccbc8;
+    border-right: 0px;
+    border-left: 0px;
+    flex-grow: 1;
+}
+
+.DivContainerSort .SpanSortTitle
+{
+    color: #666666;
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+
+.DivContainerSort .SpanSort
+{
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 0.7em;
+}
+
+.DivContainerSort i
+{
+    margin-top: -7px;
+    margin-left: 5px;
+}
+    /* ELEMENT POSTING - START */
+
+    /* ELEMENT ARTICLE POST - START */
+
+.DivProfilePost
+{
+    padding: 15px;
+}
+
+.DivProfilePost div
+{
+    flex-grow: 1;
+}
+
+.DivProfilePost .ImgCreator
+{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.DivProfilePost .ImgMore:hover
+{
+    border-radius: 50%;
+    background: #f3f2ef;
+}
+
+.DivProfilePost .ImgMore
+{
+    padding: 5px;
+    margin-top: -10px;
+    margin-right: -10px;
+    width: 20px;
+    height: 20px;
+}
+
+.DivProfilePost span
+{
+    font-size: 0.7em;
+    margin-top: 3px;
+    color: #666666;
+}
+
+.DivProfilePost .SpanNameCreator
+{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 5px;
+    color: black;
+}
+ 
+.DivParagraphPost
+{
+    font-size: 0.8em;
+    color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.DivImagePost img
+{
+    width: 100%;
+}
+
+.DivCommentPost
+{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.DivContainerComment
+{
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.DivContainerComment .BaseCommentIcon 
+{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+}
+
+.DivContainerComment .IconLike
+{
+    background-image: url('asset/icon-like.png');
+}
+
+.DivContainerComment .IconComment
+{
+    background-image: url('asset/icon-comment.png');
+}
+
+.DivContainerComment .IconShare
+{
+    background-image: url('asset/icon-share.png');
+}
+
+.DivContainerComment .IconSend
+{
+    background-image: url('asset/icon-send.png');
+}
+
+.DivContainerComment div
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.DivContainerComment div:hover
+{
+    background: #f3f2ef;
+    border-radius: 10px;
+}
+
+.DivContainerComment span
+{
+    font-size: 0.8em;
+    margin-left: 5px;
+    color: #666666;
+}
+    /* ELEMENT ARTICLE POST - END */
+
+
+
+/* ELEMENT ASIDE CENTER - END */
+
+.Latest
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+}
+
+div.DivVertical
+{
+    display: flex;
+    flex-direction: column;
+}
+
+div.DivHorizontal
+{
+    display: flex;
+}
+
+.SpaceTop
+{
+    margin-top: 10px;
+}
+
+.SpaceBottom
+{
+    margin-bottom: 10px;
+}
+
+.DivButton:hover
+{
+    background-color: #f3f2ef;
+}
+
+.DivButtonBottom:hover
+{
+    background-color: #f3f2ef;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px)
+{
+    ul 
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ListInMobile
+    {
+        width: 185px;
+        height: auto;
+    }
+    
+    li a
+    {
+        font-size: 0em;
+    }
+    
+    .FormSearchContainer 
+    {
+        width: 0px;
+        height: 0px;
+    }
+      
+    .SearchIcon 
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+      
+    .InputField
+    {
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    main
+    {
+       padding-left: 10px;
+       padding-right: 10px;
+       flex-direction: column;
+    }
+
+    .AsideLeft
+    {
+        width: 100%;
+    }
+
+    .AsideRight
+    {
+        width: 100%;
+    }
+
+    .AsideCenter 
+    {
+        padding: 0;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .DivItemCategory span
+    {
+        font-size: 0.7em;
+    }
+
+    .DivItemCategory img
+    {
+        width: 15px;
+        height: 15px;
+    }
+
+    .Latest
+    {
+        position: unset;
+        top: 0px;
+    }
+}
